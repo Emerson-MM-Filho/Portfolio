@@ -27,7 +27,6 @@ header {
     align-items: center;
     max-width: 80%;
     margin: 10px auto;
-    z-index: 999;
 }
 
 header a {
@@ -46,15 +45,17 @@ header a:hover{
 #apresentation {
     display: flex;
     align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin: auto 10%;
     height: 90vh;
-    background-image: url("../images/homemUsandoPc.png");
-    background-repeat: no-repeat;
-    background-position: 90% 70%;
     color: var(--white);
 }
 
-#apresentation div {
-    margin-left: 10%;
+.textApresentation {
+    justify-content: center;
+    width: 40%;
+    margin-right: 2.5%;
 }
 
 #apresentation h1 {
@@ -70,6 +71,16 @@ header a:hover{
 #apresentation p {
     font-size: 2rem;
     padding-bottom: 50px;
+}
+
+.imageApresentation {
+    width: 35%;
+    margin-left: 2.5%;
+}
+
+#apresentation img {
+    display: flex;
+    margin: auto;
 }
 
 .buttonLink {
@@ -155,6 +166,7 @@ header a:hover{
 
 .projectInfo h2 {
     font-size: 3rem;
+    color: var(--orange);
 }
 
 .projectInfo div {
@@ -185,4 +197,44 @@ header a:hover{
 
 .projectImage img {
     width: 500px;
+}
+
+@media (max-width: 1080px) {
+    #apresentation {
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+        margin: auto 10%;
+        height: 90vh;
+        color: var(--white);
+    }
+
+    .textApresentation {
+        max-width: 50%;
+    }
+
+    .imageApresentation {
+        max-width: 50%;
+    }
+    
+    #apresentation h1 {
+        font-weight: 700;
+        font-size: 2rem;
+    }
+    
+    #apresentation h1 span {
+        color: var(--orange);
+        font-size: 2rem;
+    }
+    
+    #apresentation p {
+        font-size: 1.5rem;
+        padding-bottom: 25px;
+    }
+    
+    #apresentation img {
+        display: flex;
+        margin: auto;
+        width: 100%;
+    }
 }
