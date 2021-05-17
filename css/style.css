@@ -3,6 +3,7 @@
 :root {
     --white: #fff;
     --orange: #FF735D;
+    --orange-hover: #b3594b;
     --main-background:#1A2E35 ;
 }
 
@@ -72,4 +73,10 @@ header a:hover{
     color: var(--white);
     text-decoration: none;
     background-color: var(--orange);
+    transition: .25s ease-in-out;
+}
+
+#apresentation a:hover {
+    padding: 12px 27px;
+    background-color: var(--orange-hover);
 }
