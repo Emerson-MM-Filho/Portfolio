@@ -4,7 +4,10 @@
     --white: #fff;
     --orange: #FF735D;
     --orange-hover: #b3594b;
-    --main-background:#1A2E35 ;
+    --main-background: #1A2E35;
+    --second-background: #1F3239;
+    --project-button: #1A2C32;
+    --project-button-hover: #293a3f;
 }
 
 * {
@@ -38,10 +41,12 @@ header a:hover{
     color: var(--orange);
 }
 
+/* apresentation */
+
 #apresentation {
     display: flex;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
     background-image: url("../images/homemUsandoPc.png");
     background-repeat: no-repeat;
     background-position: 90% 70%;
@@ -50,7 +55,6 @@ header a:hover{
 
 #apresentation div {
     margin-left: 10%;
-    
 }
 
 #apresentation h1 {
@@ -68,7 +72,7 @@ header a:hover{
     padding-bottom: 50px;
 }
 
-#apresentation a {
+.buttonLink {
     padding: 10px 25px;
     color: var(--white);
     text-decoration: none;
@@ -76,7 +80,109 @@ header a:hover{
     transition: .25s ease-in-out;
 }
 
-#apresentation a:hover {
+.buttonLink:hover {
     padding: 12px 27px;
     background-color: var(--orange-hover);
+}
+
+/* section project */
+
+.projectsSection {
+    color: var(--white);
+    background-color: var(--second-background);
+}
+
+.projectsSection h5 {
+    font-weight: 300;
+}
+
+.projecSectionContent {
+    margin-left: 10%;
+    padding: 100px 0;
+    display: flex;
+}
+
+.textContent {
+    width: 50%;
+}
+
+.projectsSectionTitle div {
+    display: flex;
+    align-items: center;
+}
+
+.projectsSectionTitle img {
+    margin-right: 10px;
+    width: 75px;
+    height: 5px;
+}
+
+.projectsSectionTitle p {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.projectButtons {
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.projectButtons #showQuantityProject {
+    margin: 0 15px;
+}
+
+.nextAndLeftProject{
+    background-color: var(--project-button);
+    border: none;
+    width: 54px;
+    height: 54px;
+    transition: .25s ease-in-out;
+}
+
+.nextAndLeftProject:hover {
+    background-color: var(--project-button-hover);
+}
+
+.projectButtons i {
+    color: var(--white);
+}
+
+.projectInfo {
+    margin-top: 50px;
+}
+
+.projectInfo h2 {
+    font-size: 3rem;
+}
+
+.projectInfo div {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.projectInfo img {
+    margin-right: 10px;
+    width: 30px;
+    height: 5px;
+}
+
+.projectInfo p {
+    line-height: 2rem;
+    padding-bottom: 35px;
+}
+
+.projectImage {
+    margin: auto;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.projectImage img {
+    width: 500px;
 }
