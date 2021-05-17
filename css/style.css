@@ -1,9 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+:root {
+    --white: #fff;
+    --orange: #FF735D;
+    --main-background:#1A2E35 ;
+}
+
 * {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--main-background);
 }
 
 header {
@@ -12,15 +23,53 @@ header {
     align-items: center;
     max-width: 80%;
     margin: 10px auto;
+    z-index: 999;
 }
 
 header a {
     text-decoration: none;
-    color: #E1E1E1;
+    color: var(--white);
     margin-left: 50px;
-    transition: .5s ease-in-out;
+    transition: .25s ease-in-out;
 }
 
 header a:hover{
-    color: #FF735D;
+    color: var(--orange);
+}
+
+#apresentation {
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    background-image: url("../images/homemUsandoPc.png");
+    background-repeat: no-repeat;
+    background-position: 90% 70%;
+    color: var(--white);
+}
+
+#apresentation div {
+    margin-left: 10%;
+    
+}
+
+#apresentation h1 {
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+#apresentation h1 span {
+    color: var(--orange);
+    font-size: 3rem;
+}
+
+#apresentation p {
+    font-size: 2rem;
+    padding-bottom: 50px;
+}
+
+#apresentation a {
+    padding: 10px 25px;
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--orange);
 }
