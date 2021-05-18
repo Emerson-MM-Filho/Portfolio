@@ -203,7 +203,7 @@ header a:hover{
     width: 500px;
 }
 
-@media (max-width: 375px) {    
+@media (max-width: 500px) {    
     header {
         max-width: 95%;
         margin: auto;
