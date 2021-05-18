@@ -54,7 +54,7 @@ header a:hover{
 
 .textApresentation {
     justify-content: center;
-    width: 40%;
+    width: 600px;
     margin-right: 2.5%;
 }
 
@@ -236,5 +236,46 @@ header a:hover{
         display: flex;
         margin: auto;
         width: 100%;
+    }
+}
+
+@media (max-width: 375px) {    
+    header {
+        max-width: 95%;
+        margin: auto;
+    }
+
+    header svg {
+        width: 48px;
+    }
+
+    header a {
+        font-size: 12px;
+    }
+
+    #apresentation {
+        justify-content: center;
+        height: 90vh;
+    }
+
+    .textApresentation {
+        max-width: 100%;
+    }
+
+    #apresentation h1 {
+        font-size: 1.5rem;
+    }
+
+    #apresentation h1 span {
+        font-size: 1.5rem;
+    }
+
+    #apresentation p {
+        font-size: 1rem;
+        padding-bottom: 25px;
+    }
+
+    .imageApresentation {
+        display: none;
     }
 }
