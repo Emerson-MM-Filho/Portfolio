@@ -254,12 +254,15 @@ header a:hover{
     }
 
     #apresentation {
-        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap-reverse;
+        margin: auto 5%;
         height: 90vh;
     }
 
     .textApresentation {
         max-width: 100%;
+        margin-top: 25px;
     }
 
     #apresentation h1 {
@@ -276,6 +279,55 @@ header a:hover{
     }
 
     .imageApresentation {
-        display: none;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .projecSectionContent {
+        padding: 50px 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .textContent {
+        width: 90%;
+        margin: auto;
+    }
+
+    .projectsSectionTitle p {
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 20px;
+    }
+
+    .projectButtons {
+        display: flex;
+        align-items: center;
+        padding-top: 25px;
+    }
+
+    .projectsSection h5 {
+        font-weight: 300;
+    }
+
+    .projectInfo p {
+        line-height: 1.5rem;
+        padding-bottom: 35px;
+        text-align: justify;
+    } 
+
+    .projectImage {
+        margin: 0;
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+
+    .projectImage img {
+        width: 200px;
     }
 }
