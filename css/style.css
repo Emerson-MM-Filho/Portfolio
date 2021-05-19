@@ -122,9 +122,11 @@ header a:hover{
     font-weight: 700;
     padding: 20px;
 }
+
 /* section project */
 .projectContainer {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .projectsSection {
@@ -293,22 +295,19 @@ header a:hover{
         width: 100%;
     }
 
-    .projecSectionContent {
-        padding: 50px 0;
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
     .textContent {
         width: 90%;
         margin: auto;
     }
+    
+    .dashLarge {
+        margin-right: 10px;
+        width: 75px;
+        height: 5px;
+    }
 
-    .projectsSectionTitle p {
-        font-size: 1.5rem;
-        font-weight: 700;
-        padding: 20px;
+    .resumeSection {
+        display: none;
     }
 
     .projectButtons {
@@ -317,8 +316,8 @@ header a:hover{
         padding-top: 25px;
     }
 
-    .projectsSection h5 {
-        font-weight: 300;
+    .projectInfo h2 {
+        font-size: 2rem;
     }
 
     .projectInfo p {
@@ -345,5 +344,34 @@ header a:hover{
         width: 90%;
         margin: auto;
         display: block;
+    }
+
+    #technologiesExp {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .techContainer {
+        width: 90px;
+        height: 90px;
+        background-color: var(--second-background);
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+    
+    .techName {
+        font-size: .5rem;
+        margin: auto;
+        color: var(--white);
+    }
+    
+    .fab {
+        font-size: 35px;
+        margin: auto;
+        color: var(--orange);
     }
 }
