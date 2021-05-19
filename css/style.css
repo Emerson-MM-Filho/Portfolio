@@ -45,7 +45,7 @@ header a:hover{
 #apresentation {
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin: auto 10%;
     height: 90vh;
@@ -55,7 +55,6 @@ header a:hover{
 .textApresentation {
     justify-content: center;
     width: 600px;
-    margin-right: 2.5%;
 }
 
 #apresentation h1 {
@@ -74,8 +73,7 @@ header a:hover{
 }
 
 .imageApresentation {
-    width: 35%;
-    margin-left: 2.5%;
+    width: 60%;
 }
 
 #imageDesktop {
@@ -100,48 +98,53 @@ header a:hover{
     background-color: var(--orange-hover);
 }
 
+/* title section */
+
+.sectionTitleContainer {
+    display: flex;
+    align-items: center;
+}
+
+.dashLarge {
+    margin-right: 10px;
+    width: 75px;
+    height: 5px;
+}
+
+.sectionTitle {
+    color: var(--white);
+    font-weight: 300;
+}
+
+.resumeSection {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 20px;
+}
 /* section project */
+.projectContainer {
+    display: flex;
+}
 
 .projectsSection {
     color: var(--white);
     background-color: var(--second-background);
 }
 
-.projectsSection h5 {
-    font-weight: 300;
-}
-
-.projecSectionContent {
-    margin-left: 10%;
+.contentContainer {
+    margin: auto 10%;
     padding: 100px 0;
-    display: flex;
 }
 
 .textContent {
     width: 50%;
 }
 
-.projectsSectionTitle div {
-    display: flex;
-    align-items: center;
-}
-
-.projectsSectionTitle img {
-    margin-right: 10px;
-    width: 75px;
-    height: 5px;
-}
-
-.projectsSectionTitle p {
-    font-size: 2rem;
-    font-weight: 700;
-    padding: 20px;
-}
-
 .projectButtons {
     display: flex;
     align-items: center;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .projectButtons #showQuantityProject {
@@ -192,7 +195,6 @@ header a:hover{
 
 .projectImage {
     margin: auto;
-    margin-right: 10%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -203,6 +205,46 @@ header a:hover{
     width: 500px;
 }
 
+/* technologies section */
+#technologiesExp {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.techContainer {
+    width: 250px;
+    height: 250px;
+    background-color: var(--second-background);
+    display: flex;
+    flex-direction: column;
+}
+
+.techName {
+    font-size: 36px;
+    margin: auto;
+    color: var(--white);
+}
+
+.fab {
+    font-size: 175px;
+    margin: auto;
+    color: var(--orange);
+}
+
+#technologiesExpLeft {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#technologiesExpLeft div {
+    margin-right: 70px;
+}
 @media (max-width: 500px) {    
     header {
         max-width: 95%;
