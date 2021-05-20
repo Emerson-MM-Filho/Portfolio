@@ -359,8 +359,8 @@ header a:hover{
     }
 
     .resumeSection {
-        margin-top: 0;
-        font-size: 1.2rem;
+        padding: 20px 0;
+        font-size: 1.4rem;
     }
 
     .projectButtons {
