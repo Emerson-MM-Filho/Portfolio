@@ -209,7 +209,8 @@ header a:hover{
 
 /* technologies section */
 #technologiesExp {
-    margin-top: 50px;
+    margin-top: 15px;
+    margin-bottom: 35px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -237,7 +238,8 @@ header a:hover{
 }
 
 #technologiesExpLeft {
-    margin-top: 50px;
+    margin-top: 15px;
+    margin-bottom: 35px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -247,6 +249,7 @@ header a:hover{
 #technologiesExpLeft div {
     margin-right: 70px;
 }
+
 @media (max-width: 500px) {    
     header {
         max-width: 95%;
@@ -307,7 +310,8 @@ header a:hover{
     }
 
     .resumeSection {
-        display: none;
+        margin-top: 0;
+        font-size: 1.2rem;
     }
 
     .projectButtons {
@@ -347,11 +351,15 @@ header a:hover{
     }
 
     #technologiesExp {
-        margin-top: 25px;
+        margin-top: 0;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: start;
+    }
+
+    #technologiesExpLeft {
+        margin-top: 0;
     }
 
     .techContainer {
@@ -377,5 +385,9 @@ header a:hover{
 
     #technologiesExpLeft div {
         margin-right: 5px;
+    }
+
+    #profileImage {
+        width: 100%;
     }
 }
