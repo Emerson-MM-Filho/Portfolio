@@ -299,7 +299,7 @@ header a:hover{
      padding: 10px;
  }
 
-@media (max-width: 500px) {
+@media (max-width: 1000px) {
     header {
         max-width: 95%;
         margin: auto;
@@ -347,9 +347,13 @@ header a:hover{
         width: 100%;
     }
 
+    .contentContainer {
+        margin: auto 5%;
+        padding: 100px 0;
+    }
+
     .textContent {
-        width: 90%;
-        margin: auto;
+        width: 100%;
     }
 
     .dashLarge {
@@ -404,11 +408,12 @@ header a:hover{
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: start;
+        justify-content: center;
     }
 
     #technologiesExpLeft {
         margin-top: 0;
+        justify-content: center;
     }
 
     .techContainer {
@@ -442,6 +447,7 @@ header a:hover{
 
     #infoContainer {
         flex-wrap: wrap;
+        margin: auto 5%;
     }
 
     #infoRight {
@@ -471,5 +477,13 @@ header a:hover{
 
     .fab {
         font-size: 50px;
+    }
+
+    .resumeSection {
+        font-size: 1.3rem;
+    }
+
+    #aboutMe {
+        font-size: .8rem;
     }
 }
