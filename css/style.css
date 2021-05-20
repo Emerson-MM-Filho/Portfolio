@@ -364,14 +364,18 @@ header a:hover{
     }
     
     .techName {
-        font-size: .5rem;
+        font-size: .8rem;
         margin: auto;
         color: var(--white);
     }
     
     .fab {
-        font-size: 35px;
+        font-size: 60px;
         margin: auto;
         color: var(--orange);
+    }
+
+    #technologiesExpLeft div {
+        margin-right: 5px;
     }
 }
