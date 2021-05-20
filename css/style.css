@@ -454,3 +454,22 @@ header a:hover{
         margin: 0;
     }
 }
+
+@media (max-width: 400px) {
+    .techContainer {
+        width: 80px;
+        height: 80px;
+        background-color: var(--second-background);
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+    }
+
+    .techName {
+        font-size: .6rem;
+    }
+
+    .fab {
+        font-size: 50px;
+    }
+}
