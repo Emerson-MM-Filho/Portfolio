@@ -340,6 +340,11 @@ header a:hover{
 .contactIcons .bi {
     color: var(--orange);
     font-size: 2rem;
+    transition: .5s ease-in-out;
+}
+
+.contactIcons:hover .bi {
+    color: var(--white);
 }
 
 @media (max-width: 1000px) {
