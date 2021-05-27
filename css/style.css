@@ -321,6 +321,7 @@ header a:hover{
 #socialMedia {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     width: 75%;
     margin: 0 auto;
 }
@@ -527,5 +528,9 @@ header a:hover{
 
     #aboutMe {
         font-size: .8rem;
+    }
+
+    #contact h2 {
+        font-size: 1.3rem;
     }
 }
