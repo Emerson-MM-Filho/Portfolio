@@ -219,21 +219,22 @@ header a:hover{
 }
 
 .techContainer {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     background-color: var(--second-background);
     display: flex;
     flex-direction: column;
+    border-radius: 5px;
 }
 
 .techName {
-    font-size: 36px;
+    font-size: 1.5rem;
     margin: auto;
     color: var(--white);
 }
 
 .fab {
-    font-size: 175px;
+    font-size: 7rem;
     margin: auto;
     color: var(--orange);
 }
@@ -298,6 +299,47 @@ header a:hover{
      list-style: none;
      padding: 10px;
  }
+
+#contactContainer {
+    width: 90%;
+    margin: auto;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contactContainer #title{
+    margin: 0 auto;
+}
+
+#contact h2 {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+#socialMedia {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+}
+
+.contactIcons {
+    background-color: var(--second-background);
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+.contactIcons .bi {
+    color: var(--orange);
+    font-size: 2rem;
+}
 
 @media (max-width: 1000px) {
     header {
@@ -459,51 +501,6 @@ header a:hover{
         width: 100%;
         margin: 0;
     }
-}
-
-#contact {
-
-}
-
-#contactContainer {
-    width: 90%;
-    margin: auto;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#contactContainer #title{
-    margin: 0 auto;
-}
-
-#contact h2 {
-    color: var(--white);
-    font-size: 2rem;
-}
-
-#socialMedia {
-    display: flex;
-    justify-content: space-between;
-    width: 75%;
-    margin: 0 auto;
-}
-
-.contactIcons {
-    background-color: var(--second-background);
-    width: 75px;
-    height: 75px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    margin-top: 50px;
-}
-
-.contactIcons .bi {
-    color: var(--orange);
-    font-size: 2rem;
 }
 
 @media (max-width: 400px) {
