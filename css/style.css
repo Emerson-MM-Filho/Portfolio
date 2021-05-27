@@ -465,12 +465,45 @@ header a:hover{
 
 }
 
-#contatc h2 {
+#contactContainer {
+    width: 90%;
+    margin: auto;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+#contactContainer #title{
+    margin: 0 auto;
+}
+
+#contact h2 {
+    color: var(--white);
+    font-size: 2rem;
+}
+
+#socialMedia {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
 }
 
 .contactIcons {
+    background-color: var(--second-background);
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 50px;
+}
 
+.contactIcons .bi {
+    color: var(--orange);
+    font-size: 2rem;
 }
 
 @media (max-width: 400px) {
