@@ -125,6 +125,19 @@ header a:hover{
 }
 
 /* section project */
+
+#contentProject {
+    display: flex;
+}
+
+#textContent {
+    max-width: 50%;
+}
+
+#imageContent {
+    margin: auto;
+}
+
 .projectContainer {
     display: flex;
     flex-wrap: wrap;
@@ -138,10 +151,6 @@ header a:hover{
 .contentContainer {
     margin: auto 10%;
     padding: 100px 0;
-}
-
-.textContent {
-    width: 50%;
 }
 
 .projectButtons {
@@ -429,6 +438,20 @@ header a:hover{
         line-height: 1.5rem;
         padding-bottom: 35px;
         text-align: justify;
+    }
+
+    #contentProject {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #textContent {
+        max-width: 100%;
+    }
+
+    #imageContent {
+        margin: auto;
+        margin-top: 75px;
     }
 
     .projectImage {
