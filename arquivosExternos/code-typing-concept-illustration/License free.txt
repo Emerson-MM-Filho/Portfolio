@@ -5,7 +5,7 @@ you are bound to the license terms described in the accompanying file
 
 ---------------------
 
-You must attribute the image to its author:
+You must attribute the imageDesktop to its author:
 
 In order to use a content or a part of it, you must attribute it to stories / Freepik,
 so we will be able to continue creating new graphic resources every day.
@@ -25,7 +25,7 @@ Paste this text on the final work so the authorship is known.
 "Designed by stories / Freepik"
 
 
-You are free to use this image:
+You are free to use this imageDesktop:
 
 - For both personal and commercial projects and to modify it.
 - In a website or presentation template or application or as part of your design.
