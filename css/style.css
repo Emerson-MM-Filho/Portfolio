@@ -100,7 +100,7 @@ header a:hover{
 }
 
 .buttonLink:hover {
-    padding: 12px 27px;
+    border-radius: 5px;
     background-color: var(--orange-hover);
 }
 
@@ -177,6 +177,7 @@ header a:hover{
 }
 
 .nextAndLeftProject:hover {
+    border-radius: 5px;
     background-color: var(--project-button-hover);
 }
 
@@ -342,7 +343,10 @@ header a:hover{
     display: flex;
     justify-content: center;
     width: 100%;
+}
 
+#contactText span {
+    color: var(--orange);
 }
 
 #socialMedia {
@@ -371,6 +375,7 @@ header a:hover{
 }
 
 .contactIcons:hover .bi {
+    font-size: 2.5rem;
     color: var(--white);
 }
 
