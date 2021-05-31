@@ -345,6 +345,13 @@ header a:hover{
     width: 100%;
 }
 
+#contactText div {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
 #contactText span {
     color: var(--orange);
 }
@@ -581,7 +588,35 @@ header a:hover{
         font-size: .8rem;
     }
 
+    #contactContainer {
+        height: 500px;
+    }
+
     #contact h2 {
         font-size: 1.3rem;
+    }
+
+    #contactText {
+        flex-wrap: wrap;
+    }
+
+    #contactText span {
+        margin: 15px auto 0;
+    }
+
+    #contactContainer #title p {
+        margin: 0 auto;
+    }
+
+    #contactText div {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contactIcons {
+        width: 50px;
+        height: 50px;
+        margin: 15px 5px;
     }
 }
