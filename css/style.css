@@ -46,6 +46,10 @@ header a:hover{
     color: var(--orange);
 }
 
+.btnMenuDisplay {
+    display: none;
+}
+
 /* apresentation */
 
 #apresentation {
@@ -563,6 +567,50 @@ header a:hover{
 }
 
 @media (max-width: 400px) {
+
+    header {
+        position: relative;
+        z-index: 999;
+    }
+
+    .btnMenuDisplay {
+        display: block;
+    }
+
+    .hideMenu {
+        display: none;
+    }
+
+    header .bi {
+        font-size: 2rem;
+        color: var(--white);
+        width: 36px;
+    }
+
+    header nav {
+        position: absolute;
+        top: 75px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        width: 100%;
+        background-color: var(--second-background);
+    }
+
+    nav a {
+        text-align: right;
+    }
+
+    .headerLinks {
+        padding: 15px 0;
+        margin: 0;
+        font-size: 2rem;
+        font-weight: 600;
+        border-bottom: 1px solid var(--orange);
+        width: 100%;
+    }
+
     .techContainer {
         width: 80px;
         height: 80px;
