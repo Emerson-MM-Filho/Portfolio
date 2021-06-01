@@ -569,7 +569,12 @@ header a:hover{
 @media (max-width: 600px) {
 
     header {
-        position: relative;
+        position: fixed;
+        max-width: 100%;
+        width: 100%;
+        top: 0;
+        height: 75px;
+        background-color: var(--main-background);
         z-index: 999;
     }
 
@@ -579,6 +584,10 @@ header a:hover{
 
     .hideMenu {
         display: none;
+    }
+
+    header a {
+        margin-left: 10px;
     }
 
     header .bi {
@@ -592,7 +601,6 @@ header a:hover{
         top: 75px;
         display: flex;
         flex-direction: column;
-        justify-content: right;
         height: 100vh;
         width: 100%;
         background-color: var(--main-background);
@@ -600,11 +608,14 @@ header a:hover{
 
     nav a {
         text-align: right;
+        max-width: 100%;
+        width: 100%;
+        padding: 0 50px;
     }
 
     #apresentation {
-        height: 100%;
-        margin: 25px 5%;
+        height: 80%;
+        margin:  100px 5% 25px;
     }
 
     #apresentation p {
@@ -614,12 +625,11 @@ header a:hover{
     }
 
     .headerLinks {
-        padding: 15px 0;
+        padding: 15px 10px;
         margin: 0;
         font-size: 2rem;
         font-weight: 600;
         border-bottom: 1px solid var(--orange);
-        width: 100%;
     }
 
     .techContainer {
