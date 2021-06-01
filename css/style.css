@@ -566,7 +566,7 @@ header a:hover{
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 600px) {
 
     header {
         position: relative;
@@ -600,6 +600,17 @@ header a:hover{
 
     nav a {
         text-align: right;
+    }
+
+    #apresentation {
+        height: 100%;
+        margin: 25px 5%;
+    }
+
+    #apresentation p {
+        font-size: 1rem;
+        margin-bottom: 25px;
+        padding: 0;
     }
 
     .headerLinks {
@@ -666,5 +677,10 @@ header a:hover{
         width: 50px;
         height: 50px;
         margin: 15px 5px;
+    }
+
+    #socialMedia {
+        margin-top: 25px;
+        justify-content: center;
     }
 }
