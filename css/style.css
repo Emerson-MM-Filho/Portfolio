@@ -622,7 +622,7 @@ header a:hover{
 
     #apresentation {
         height: 80%;
-        margin:  100px 5% 25px;
+        padding-top: 100px;
     }
 
     #apresentation p {
