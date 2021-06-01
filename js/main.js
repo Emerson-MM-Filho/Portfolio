@@ -16,13 +16,6 @@ const projects = [
     imageMobile: './images/projects/sistemaDePedido2.png',
     link: 'https://github.com/Emerson-MM-Filho/sistemaDePedidos',
   },
-  {
-    name: 'Lunar Way',
-    description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, sed. Nam esse dolores asperiores quam ex blanditiis, ipsa fuga itaque necessitatibus maxime ipsum illum repellat nihil provident quod laborum temporibus?',
-    imageDesktop: './images/projectImage.png',
-    imageMobile: './images/projectImage.png',
-    link: 'https://github.com/Emerson-MM-Filho',
-  }
 ]
 
 const renderProject = (obj,index) => {
