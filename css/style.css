@@ -46,6 +46,10 @@ header a:hover{
     color: var(--orange);
 }
 
+#logo {
+    margin: 0;
+}
+
 .btnMenuDisplay {
     display: none;
 }
@@ -63,8 +67,7 @@ header a:hover{
 }
 
 .textApresentation {
-    justify-content: center;
-    width: 600px;
+    width: 50%;
 }
 
 #apresentation h1 {
@@ -83,7 +86,11 @@ header a:hover{
 }
 
 .imageApresentation {
-    width: 60%;
+    width: 50%;
+}
+
+.imageApresentation img {
+    width: 100%;
 }
 
 #imageDesktop {
@@ -390,18 +397,18 @@ header a:hover{
     color: var(--white);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1080px) {
     header {
         max-width: 95%;
         margin: auto;
     }
 
     header svg {
-        width: 48px;
+        width: 64px;
     }
 
     header a {
-        font-size: 12px;
+        font-size: 1rem;
     }
 
     #apresentation {
@@ -622,6 +629,10 @@ header a:hover{
         font-size: 1rem;
         margin-bottom: 25px;
         padding: 0;
+    }
+
+    .textApresentation {
+        width: 100%;
     }
 
     .headerLinks {
