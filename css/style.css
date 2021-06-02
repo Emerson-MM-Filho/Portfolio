@@ -264,11 +264,11 @@ header a:hover{
 
 /* technologies section */
 #technologiesExp {
-    margin-top: 15px;
-    margin-bottom: 35px;
+    margin: 35px 0;
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -279,6 +279,7 @@ header a:hover{
     display: flex;
     flex-direction: column;
     border-radius: 5px;
+    margin: 5px;
 }
 
 .techName {
@@ -559,15 +560,6 @@ header a:hover{
     }
 
     #technologiesExp {
-        margin-top: 0;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #technologiesExpLeft {
-        margin-top: 0;
         justify-content: center;
     }
 
