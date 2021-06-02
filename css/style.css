@@ -28,11 +28,20 @@ body {
 }
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--main-background);
+    z-index: 999;
+}
+
+#headerContainer {
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 80%;
-    margin: 10px auto;
+    padding: 10px 0;
+    margin: 0 10%;
 }
 
 header a {
@@ -48,6 +57,19 @@ header a:hover{
 
 #logo {
     margin: 0;
+}
+
+#logo svg {
+    width: 75px;
+    height: 55px;
+}
+
+#logo svg path {
+    transition: .25s ease-in-out;
+}
+
+#logo svg:hover path{
+    stroke: var(--orange);
 }
 
 .btnMenuDisplay {
