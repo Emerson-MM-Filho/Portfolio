@@ -356,7 +356,7 @@ header a:hover{
 
 #contactContainer {
     margin: 0 10%;
-    height: 350px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -380,7 +380,7 @@ header a:hover{
 
 #contactText {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -395,12 +395,17 @@ header a:hover{
     color: var(--orange);
 }
 
-#socialMedia {
+#iconsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.socialMedia {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 75%;
-    margin: 0 auto;
+    margin: 15px 0;
 }
 
 .contactLinkAndIcon {
@@ -420,7 +425,7 @@ header a:hover{
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    margin-top: 50px;
+    margin: 5px;
 }
 
 .contactIcons .bi {
@@ -608,6 +613,18 @@ header a:hover{
         width: 100%;
         margin: 0;
     }
+
+    #contact {
+        height: 550px;
+    }
+
+    #contactText {
+        flex-wrap: wrap;
+    }
+
+    #contactText p {
+        font-size: .8rem;
+    }
 }
 
 @media (max-width: 600px) {
@@ -714,7 +731,7 @@ header a:hover{
     }
 
     #contactText {
-        flex-wrap: wrap;
+        justify-content: center;
     }
 
     #contactText span {
@@ -734,10 +751,9 @@ header a:hover{
     .contactIcons {
         width: 50px;
         height: 50px;
-        margin: 15px 5px;
     }
 
-    #socialMedia {
+    .socialMedia {
         margin-top: 25px;
         justify-content: center;
     }
