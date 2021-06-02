@@ -366,6 +366,7 @@ header a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 15px;
 }
 
 #contactContainer #title p {
@@ -380,7 +381,7 @@ header a:hover{
 
 #contactText {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 100%;
 }
 
@@ -405,7 +406,7 @@ header a:hover{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 15px 0;
+    margin: 5px 0;
 }
 
 .contactLinkAndIcon {
@@ -739,7 +740,7 @@ header a:hover{
     }
 
     #contactContainer #title p {
-        margin: 0 auto;
+        margin: 0 10px;
     }
 
     #contactText div {
@@ -754,7 +755,6 @@ header a:hover{
     }
 
     .socialMedia {
-        margin-top: 25px;
         justify-content: center;
     }
 }
