@@ -5,7 +5,8 @@ const titleContainer = document.querySelector('#projectTitle')
 const descriptionContainer = document.querySelector('#projectDescription')
 const imageDesktop = document.querySelector('#imageDesktop')
 const imageMobile = document.querySelector('#imgMobile')
-const linkContainer = document.querySelector('#projectLink')
+const linkRepository = document.querySelector('#projectRepositoryLink')
+const linkTest = document.querySelector('#projectTestLink')
 const showQuantityProject = document.querySelector('#showQuantityProject')
 
 const projects = [
@@ -14,7 +15,16 @@ const projects = [
     description: 'Este projeto se trata de um sistema de controle de pedidos de uma confeitaria, com cadastro de pedidos, produtos, clientes, taxas de entregas e notificações. Este sistema foi desenvolvido utilizando tecnologias como React Js, JavaScript, Html e Css.',
     imageDesktop: './images/projects/sistemaDePedido.png',
     imageMobile: './images/projects/sistemaDePedido2.png',
-    link: 'https://github.com/Emerson-MM-Filho/sistemaDePedidos',
+    linkRepository: 'https://github.com/Emerson-MM-Filho/sistemaDePedidos',
+    linkTest: 'https://emerson-mm-filho.github.io/sistemaDePedidos/',
+  },
+  {
+    name: 'Seção de depoimento',
+    description: 'Este é um projeto que se trata da resolução do desafio disponível na plataforma Frontend Mentor, que tem como objetivo criar a seção de depoimentos de um página, tanto para versão desktop quanto para dispositivos móveis. Sendo realizada com as tecnologias HTML e CSS.',
+    imageDesktop: './images/projects/testimonialSection.png',
+    imageMobile: './images/projects/testimonialSection.png',
+    linkRepository: 'https://github.com/Emerson-MM-Filho/Testimonials-grid-section',
+    linkTest: 'https://emerson-mm-filho.github.io/Testimonials-grid-section/',
   },
 ]
 
@@ -23,7 +33,8 @@ const renderProject = (obj,index) => {
   descriptionContainer.innerText = obj[index].description
   imageDesktop.setAttribute('src', obj[index].imageDesktop)
   imageMobile.setAttribute('src', obj[index].imageMobile)
-  linkContainer.setAttribute('href', obj[index].link)
+  linkRepository.setAttribute('href', obj[index].linkRepository)
+  linkTest.setAttribute('href', obj[index].linkTest)
   showQuantityProject.innerText = `${index + 1}/0${obj.length}`
   if (index <= 9) {
     showQuantityProject.innerText = `${index + 1}/0${obj.length}`
