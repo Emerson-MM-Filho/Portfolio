@@ -5,8 +5,8 @@ const titleContainer = document.querySelector('#projectTitle')
 const descriptionContainer = document.querySelector('#projectDescription')
 const imageDesktop = document.querySelector('#imageDesktop')
 const imageMobile = document.querySelector('#imgMobile')
-const linkRepository = document.querySelector('#projectRepositoryLink')
-const linkTest = document.querySelector('#projectTestLink')
+const buttonRepository = document.querySelector('#projectRepositoryLink')
+const buttonTest = document.querySelector('#projectTestLink')
 const showQuantityProject = document.querySelector('#showQuantityProject')
 
 const projects = [
@@ -33,8 +33,8 @@ const renderProject = (obj,index) => {
   descriptionContainer.innerText = obj[index].description
   imageDesktop.setAttribute('src', obj[index].imageDesktop)
   imageMobile.setAttribute('src', obj[index].imageMobile)
-  linkRepository.setAttribute('href', obj[index].linkRepository)
-  linkTest.setAttribute('href', obj[index].linkTest)
+  buttonRepository.setAttribute('href', obj[index].linkRepository)
+  buttonTest.setAttribute('href', obj[index].linkTest)
   showQuantityProject.innerText = `${index + 1}/0${obj.length}`
   if (index <= 9) {
     showQuantityProject.innerText = `${index + 1}/0${obj.length}`
@@ -47,17 +47,15 @@ const renderProject = (obj,index) => {
 const changeProject = (obj) => {
 
   let index = 0
-  renderProject(obj,index)
+  renderProject(obj, index)
 
   next.addEventListener('click', () => {
     index += (index < obj.length - 1) ? 1 : 0
-    console.log(index)
     renderProject(obj, index)
   })
 
   last.addEventListener('click', () => {
     index -= (index > 0) ? 1 : 0
-    console.log(index)
     renderProject(obj, index)
   })
 }
