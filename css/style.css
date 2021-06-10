@@ -302,6 +302,12 @@ header a:hover{
     font-size: 5rem;
     margin: auto;
     color: var(--orange);
+    transition: .5s ease-in-out;
+}
+
+.techContainer:hover .fab {
+    font-size: 5.5rem;
+    color: var(--white);
 }
 
 #aboutMeSection {
