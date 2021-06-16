@@ -26,6 +26,14 @@ const projects = [
     linkRepository: 'https://github.com/Emerson-MM-Filho/Testimonials-grid-section',
     linkTest: 'https://emerson-mm-filho.github.io/Testimonials-grid-section/',
   },
+  {
+    name: 'Carrinho de compras',
+    description: 'O projeto "Carrinho de compras" consiste em um sistema de carrinho de compras de um e-commerce fictício. Este projeto teve como base, a API "Fake Store API", para a criação de produtos. O site foi desenvolvido com o framework javascript "React" e SASS.',
+    imageDesktop: './images/projects/productCart.png',
+    imageMobile: './images/projects/productCart.png',
+    linkRepository: 'https://github.com/Emerson-MM-Filho/Product-cart-react-system',
+    linkTest: 'Em breve',
+  },
 ]
 
 const renderProject = (obj,index) => {
@@ -34,8 +42,16 @@ const renderProject = (obj,index) => {
   imageDesktop.setAttribute('src', obj[index].imageDesktop)
   imageMobile.setAttribute('src', obj[index].imageMobile)
   buttonRepository.setAttribute('href', obj[index].linkRepository)
-  buttonTest.setAttribute('href', obj[index].linkTest)
+  if (obj[index].linkTest === 'Em breve') {
+    buttonTest.removeAttribute('href')
+    buttonTest.innerText = 'Em breve'
+    buttonTest.disabled = true
+  } else {
+    buttonTest.setAttribute('href', obj[index].linkTest)
+  }
+
   showQuantityProject.innerText = `${index + 1}/0${obj.length}`
+  
   if (index <= 9) {
     showQuantityProject.innerText = `${index + 1}/0${obj.length}`
   }
