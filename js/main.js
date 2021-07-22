@@ -32,7 +32,23 @@ const projects = [
     imageDesktop: './images/projects/productCart.png',
     imageMobile: './images/projects/productCart.png',
     linkRepository: 'https://github.com/Emerson-MM-Filho/Product-cart-react-system',
-    linkTest: 'Em breve',
+    linkTest: '',
+  },
+  {
+    name: 'GamePlay',
+    description: 'O projeto "GamePlay" é um aplicativo construído com React Native, Typescript, Expo, Context API. O Objetivo deste projeto foi criar um aplicativo que auxilie na conexão e organização dos momentos de diversão e jogatina com os amigos.',
+    imageDesktop: './images/projects/nlwReactNative.png',
+    imageMobile: './images/projects/nlwReactNative.png',
+    linkRepository: 'https://github.com/Emerson-MM-Filho/NLW-Together-React-Native',
+    linkTest: '',
+  },
+  {
+    name: 'Valoriza',
+    description: 'O projeto "Valoriza" é uma aplicação Backend, utilizando Node Js, Typescript, Express, JWT e outras tecnologias. O Objetivo deste projeto foi criar uma aplicação que promova o reconhecimento entre os companheiros de equipe, cadastrando tags e elogios.',
+    imageDesktop: './images/projects/nlwNodeJs.png',
+    imageMobile: './images/projects/nlwNodeJs.png',
+    linkRepository: 'https://github.com/Emerson-MM-Filho/NLW-Together-Node-Js',
+    linkTest: '',
   },
 ]
 
@@ -42,12 +58,10 @@ const renderProject = (obj,index) => {
   imageDesktop.setAttribute('src', obj[index].imageDesktop)
   imageMobile.setAttribute('src', obj[index].imageMobile)
   buttonRepository.setAttribute('href', obj[index].linkRepository)
-  if (obj[index].linkTest === 'Em breve') {
-    buttonTest.removeAttribute('href')
-    buttonTest.innerText = 'Em breve'
-    buttonTest.disabled = true
-  } else {
+  if (obj[index].linkTest !== '') {
     buttonTest.setAttribute('href', obj[index].linkTest)
+  } else {
+    buttonTest.parentNode.remove()
   }
 
   showQuantityProject.innerText = `${index + 1}/0${obj.length}`
